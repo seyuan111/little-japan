@@ -1,0 +1,64 @@
+.header{
+    height: 45vw;
+    margin: 30px auto;
+    background: url("https://www.tastingtable.com/img/gallery/20-japanese-dishes-you-need-to-try-at-least-once/l-intro-1664219638.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the last value to change the darkness level */
+    border-radius: 20px; /* Match the border-radius of the header */
+}
+
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 2s;
+}
+
+.header-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 22px);
+}
+
+.header-contents p {
+    color: white;
+    font-size: 1.5vw;
+    margin: 10px 0
+}
+
+.header-contents button{
+    border: 2px solid white;
+    color: white;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.header-contents button:hover{
+    border: 2px solid white;
+    color: white;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: black;
+    border-radius: 30px;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
