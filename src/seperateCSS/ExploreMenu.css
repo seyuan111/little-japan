@@ -27,11 +27,8 @@
     display: none;
 }
 
-.explore-menu-list-item{
-    cursor: pointer;
-}
-
 .explore-menu-list-item img{
+    cursor: pointer;
     width: 7.5vw;
     min-width: 80px;
     height: 5rem;
@@ -48,4 +45,9 @@
     height: 2px;
     border: none;
     background-color: #acacac;
+}
+
+.explore-menu-list-item .active{
+    border: 2px solid red;
+    padding: 2px;
 }
