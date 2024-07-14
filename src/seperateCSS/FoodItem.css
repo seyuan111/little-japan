@@ -3,53 +3,88 @@
     margin: auto;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #00000015;
-    transition: 0.3;
+    transition: 0.3s;
     animation: fadeIn;
 }
 
-.food-item-img{
+.food-item-img-container {
+    position: relative;
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+    height: 200px; /* Set a fixed height for the image container */
 }
 
-.food-item-info{
+.food-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the entire container while maintaining its aspect ratio */
+    border-radius: 15px 15px 0 0;
+}
+
+.food-item-info {
     padding: 20px;
 }
 
-.food-item-name-ratings{
+.food-item-name-ratings {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.food-item-name-ratings p{
+.food-item-name-ratings p {
     font-size: 20px;
     font-weight: bold;
 }
 
-.food-item-desc{
+.food-item-desc {
     color: rgb(73, 70, 70);
     font-size: 12px;
 }
 
-.food-item-price{
+.food-item-price {
     color: rgb(73, 70, 70);
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0px;
 }
 
-.food-item-img-container{
-    position: relative;
-}
-
-.food-item-img-container .add{
-    width: 35px;
+.food-item-img-container .add {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
     position: absolute;
     bottom: 15px;
     right: 15px;
     cursor: pointer;
     border-radius: 50%;
     color: rgb(121, 117, 117);
+    background-color: white;
+}
+
+.food-item-counter {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.food-item-img-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* This ensures that any part of the image outside the container will be hidden */
+    height: 200px; /* Set a fixed height for the image container */
+}
+
+.food-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the entire container while maintaining its aspect ratio */
+    border-radius: 15px 15px 0 0;
 }

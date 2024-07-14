@@ -9,7 +9,7 @@ const NavBar = () => {
 
   return (
     <div className="navbar">
-      <img src="https://img.freepik.com/premium-vector/simple-logo-design-bowl-japanese-ramen-korea-style-logo-template_656472-544.jpg" alt="" className="japaneseLogo"></img>
+      <img src="https://c8.alamy.com/comp/2J2TJ03/sushi-logo-in-a-bowl-chopsticks-swoosh-bowl-oriental-japan-cuisine-japanese-sushi-seafood-logo-design-inspiration-2J2TJ03.jpg" alt="" className="japaneseLogo"></img>
 
       <ul className="menu">
         <li onClick={() => setMenu("home")} className={menu === "home" ? "active": ""}>Home</li>

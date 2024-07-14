@@ -62,7 +62,7 @@ export const food_list = [
         image: CaliforniaRoll,
         price: 10.23,
         description: "California roll is a sushi roll with crab meat and avocado inside.",
-        categories: "Sushi and Sashimi"
+        categories: "sushi and sashimi"
     },
     {
         _id: "2",
@@ -70,7 +70,7 @@ export const food_list = [
         image: RainbowRoll,
         price: 10.23,
         description: "Rainbow roll is a sushi roll with crab meat and avocado inside with a variety of sashimi and avocado on top of the sushi.",
-        categories: "Sushi and Sashimi"
+        categories: "sushi and sashimi"
     },
     {
         _id: "3",
@@ -78,7 +78,7 @@ export const food_list = [
         image: DragonRoll,
         price: 15.23,
         description: "Dragon roll is a sushi roll with eel and avocado inside with a drizzle of eel sauce.",
-        categories: "Sushi and Sashimi"
+        categories: "sushi and sashimi"
     },
     {
         _id: "4",
@@ -86,7 +86,7 @@ export const food_list = [
         image: Salmon,
         price: 3,
         description: "Salmon Sashimi is a piece of salmon.",
-        categories: "Sushi and Sashimi"
+        categories: "sushi and sashimi"
     },
     {
         _id: "5",
@@ -94,7 +94,7 @@ export const food_list = [
         image: YellowTail,
         price: 3,
         description: "Yellow Tail Sashimi is a piece of yellow tail.",
-        categories: "Sushi and Sashimi"
+        categories: "sushi and sashimi"
     },
     {
         _id: "6",
@@ -102,7 +102,7 @@ export const food_list = [
         image: WhiteTuna,
         price: 3,
         description: "White Tuna Sashimi is a piece of White Tuna.",
-        categories: "Sushi and Sashimi"
+        categories: "sushi and sashimi"
     },
     {
         _id: "7",
@@ -110,7 +110,7 @@ export const food_list = [
         image: KaniSalad,
         price: 7,
         description: "A mix of crab meat and cucumber and some tempura crunch.",
-        categories: "Appetizer"
+        categories: "appetizers"
     },
     {
         _id: "8",
@@ -118,7 +118,7 @@ export const food_list = [
         image: SeaweedSalad,
         price: 7,
         description: "A mix of seaweded.",
-        categories: "Appetizer"
+        categories: "appetizers"
     },
     {
         _id: "9",
@@ -126,7 +126,7 @@ export const food_list = [
         image: GardenSalad,
         price: 20,
         description: "A mix of lettuce tomatoes and avocado.",
-        categories: "Appetizer"
+        categories: "appetizers"
     },
     {
         _id: "10",
@@ -134,7 +134,7 @@ export const food_list = [
         image: Edaname,
         price: 30,
         description: "A green beans.",
-        categories: "Appetizer"
+        categories: "appetizers"
     },
     {
         _id: "11",
@@ -142,7 +142,7 @@ export const food_list = [
         image: Gyoza,
         price: 50,
         description: "A Dumplings with pork and vegetables inside. Served with dipping sauce.",
-        categories: "Appetizer"
+        categories: "appetizers"
     },
     {
         _id: "12",
@@ -150,7 +150,7 @@ export const food_list = [
         image: Calamari,
         price: 100,
         description: "A box of Fried Calimari. Served with dipping sauce.",
-        categories: "Appetizer"
+        categories: "appetizers"
     },
     {
         _id: "13",
@@ -158,7 +158,7 @@ export const food_list = [
         image: Soups,
         price: 30,
         description: "A miso soup with seaweed and tofu.",
-        categories: "Soup"
+        categories: "Soups"
     },
     {
         _id: "14",
@@ -166,6 +166,6 @@ export const food_list = [
         image: ChickenNoodleSoup,
         price: 25,
         description: "Chicken Soup with udon noodles with chicken and broccoli and crab meat.",
-        categories: "Soup"
+        categories: "Soups"
     },
 ]
