@@ -20,12 +20,24 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-content-center">
-            
+              <h2>Little-Japan</h2>
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Delivery</li>
+                <li>Policy</li>
+              </ul>
             </div>
             <div className="footer-content-right">
-            
+              <h2>Contact Support</h2>
+              <ul>
+                <li>Number: 1-333-222-5555</li>
+                <li>Email: LittleJapan@gmail.com</li>
+              </ul>
             </div>
         </div>
+      <hr></hr>
+      <p className="copyright">Copyright 2024 LittleJapan - all rights reserved</p>
     </div>
   )
 }
