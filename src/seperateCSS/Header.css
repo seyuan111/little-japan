@@ -1,7 +1,7 @@
-.header{
+.header {
     height: 45vw;
     margin: 30px auto;
-    background: url("https://www.tastingtable.com/img/gallery/20-japanese-dishes-you-need-to-try-at-least-once/l-intro-1664219638.jpg") no-repeat;
+    background: url("https://www.tastingtable.com/img/gallery/20-japanese-dishes-you-need-to-try-at-least-once/l-intro-1664219638.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
     border-radius: 20px;
@@ -18,7 +18,7 @@
     border-radius: 20px; /* Match the border-radius of the header */
 }
 
-.header-contents{
+.header-contents {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@
     animation: fadeIn 2s;
 }
 
-.header-contents h2{
+.header-contents h2 {
     font-weight: 500;
     color: white;
     font-size: max(4.5vw, 22px);
@@ -39,10 +39,10 @@
 .header-contents p {
     color: white;
     font-size: 1.5vw;
-    margin: 10px 0
+    margin: 10px 0;
 }
 
-.header-contents button{
+.header-contents button {
     border: 2px solid white;
     color: white;
     font-weight: 500;
@@ -52,7 +52,7 @@
     cursor: pointer;
 }
 
-.header-contents button:hover{
+.header-contents button:hover {
     border: 2px solid white;
     color: white;
     font-weight: 500;
@@ -61,4 +61,34 @@
     border-radius: 30px;
     cursor: pointer;
     transition-duration: 300ms;
+}
+
+@media (max-width: 1050px) {
+    .header {
+        height: 38vw;
+    }
+
+    .header-contents {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 750px) {
+    .header {
+        height: 50vw;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .header-contents {
+        max-width: 55%;
+    }
+
+    .header-contents p {
+        display: none;
+    }
+
+    .header-contents button {
+        padding: 2vw 4vw;
+    }
 }
