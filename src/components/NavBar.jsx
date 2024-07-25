@@ -3,7 +3,7 @@ import '../seperateCSS/NavBar.css';
 import { FaSearch, FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
 import {Link} from 'react-router-dom'
 
-const NavBar = () => {
+const NavBar = ({setShowLogin}) => {
   const [menu, setMenu] = useState("home");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -31,7 +31,7 @@ const NavBar = () => {
           <FaShoppingCart className="shopping-cart" />
           <div className="dot"></div>
         </div>
-        <button>Sign In</button>
+        <button onClick={() => setShowLogin(true)}>Sign In</button>
       </div>
       
       <div className="hamburger" onClick={toggleMobileMenu}>
