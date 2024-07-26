@@ -20,11 +20,12 @@
     color: #525252;
 }
 
-.menu li {
+.menu a {
+    color: rgb(58, 58, 58);
     cursor: pointer;
 }
 
-.menu li:hover {
+.menu a:hover {
     color: blue;
     transition-duration: 200ms;
 }
@@ -89,10 +90,19 @@
     right: -8px;
 }
 
+.search-icon-navbar .shopping-cart{
+    font-size: 20px;
+    color: black
+}
+
 .hamburger {
     display: none;
     font-size: 25px;
     cursor: pointer;
+}
+
+.right .search{
+    font-size: 20px;
 }
 
 @media (max-width: 1050px) {
@@ -122,7 +132,7 @@
 
     .right button {
         padding: 7px 20px;
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .hamburger {
