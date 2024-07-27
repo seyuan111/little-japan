@@ -19,6 +19,8 @@ import Edaname from '../assets/Edaname.jpg'
 import Gyoza from '../assets/Gyoza.jpg'
 import Calamari from '../assets/Calamari.jpg'
 import ChickenNoodleSoup from '../assets/ChickenNoodleSoup.jpg'
+import TeriyakiFriedRice from '../assets/TeriyakiFriedRice.jpg'
+import YakiUdon from '../assets/YakiUdon.jpg'
 
 export const menu_list = [
     {
@@ -167,5 +169,21 @@ export const food_list = [
         price: 25,
         description: "Chicken Soup with udon noodles with chicken and broccoli and crab meat.",
         categories: "Soups"
+    },
+    {
+        _id: "15",
+        name: "Chicken Teriyaki Fried Rice",
+        image: TeriyakiFriedRice,
+        price: 150,
+        description: "Fried rice wok made with special teriyaki chicken on top.",
+        categories: "Rice"
+    },
+    {
+        _id: "16",
+        name: "Stir Fried Shrimp Udon",
+        image: YakiUdon,
+        price: 300,
+        description: "Stir fried udon made to perfection with jumbo shimp on top.",
+        categories: "Udon Noodles"
     },
 ]
