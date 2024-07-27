@@ -13,15 +13,15 @@ function App() {
   return (
     <>
     {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>}
-    <div className="app">
-      <NavBar setShowLogin={setShowLogin} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/order" element={<PlaceOrder />}/>
-      </Routes>
-      <Footer />
-    </div>
+      <div className="app">
+        <NavBar setShowLogin={setShowLogin} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/order" element={<PlaceOrder />}/>
+        </Routes>
+        <Footer />
+      </div>
     
     </>
   )

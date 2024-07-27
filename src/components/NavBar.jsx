@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import '../seperateCSS/NavBar.css';
 import { FaSearch, FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import {StoreContext} from '../context/StoreContext'
 
 const NavBar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const {getTotalCartAmount} = useContext(StoreContext)
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -34,7 +36,7 @@ const NavBar = ({ setShowLogin }) => {
         <FaSearch className="search" />
         <div className="search-icon-navbar">
           <Link to="/cart"><FaShoppingCart className="shopping-cart" /></Link>
-          <div className="dot"></div>
+          <div className={getTotalCartAmount()===0?"":"dot"}></div>
         </div>
         <button onClick={() => setShowLogin(true)}>Sign In</button>
       </div>
