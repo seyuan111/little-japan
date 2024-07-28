@@ -21,6 +21,7 @@ import Calamari from '../assets/Calamari.jpg'
 import ChickenNoodleSoup from '../assets/ChickenNoodleSoup.jpg'
 import TeriyakiFriedRice from '../assets/TeriyakiFriedRice.jpg'
 import YakiUdon from '../assets/YakiUdon.jpg'
+import ChickenBento from '../assets/ChickenBento.jpg'
 
 export const menu_list = [
     {
@@ -185,5 +186,13 @@ export const food_list = [
         price: 300,
         description: "Stir fried udon made to perfection with jumbo shimp on top.",
         categories: "Udon Noodles"
+    },
+    {
+        _id: "17",
+        name: "Chicken Bento Box",
+        image: ChickenBento,
+        price: 10,
+        description: "Chicken bento box with a choice of sushi or shumai.",
+        categories: "Chef Kitchen"
     },
 ]

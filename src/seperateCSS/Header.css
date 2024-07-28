@@ -52,6 +52,10 @@
     cursor: pointer;
 }
 
+.header-contents button a {
+    color: white;
+}
+
 .header-contents button:hover {
     border: 2px solid white;
     color: white;

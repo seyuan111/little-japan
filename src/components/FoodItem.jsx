@@ -15,9 +15,9 @@ const FoodItem = ({ id, name, price, description, image }) => {
                 {
                     !cartItems[id] ? <FaPlus className="add" onClick={() => addToCart(id)} /> :
                     <div className="food-item-counter">
-                        <IoIosRemove onClick={() => removeFromCart(id)} />
-                        <p>{cartItems[id]}</p>
-                        <IoIosAdd onClick={() => addToCart(id)} />
+                        <IoIosRemove className="minus" onClick={() => removeFromCart(id)} />
+                        <p className="count">{cartItems[id]}</p>
+                        <IoIosAdd className="plus" onClick={() => addToCart(id)} />
                     </div>
                 }
             </div>
