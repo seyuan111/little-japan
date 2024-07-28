@@ -1,5 +1,6 @@
 import React from 'react'
 import '../seperateCSS/Footer.css'
+import {Link} from 'react-router-dom'
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -22,8 +23,8 @@ const Footer = () => {
             <div className="footer-content-center">
               <h2>Little-Japan</h2>
               <ul>
-                <li>Home</li>
-                <li>About</li>
+                <Link to='/'><li>Home</li></Link>
+                <Link to='/about'><li>About</li></Link>
                 <li>Delivery</li>
                 <li>Policy</li>
               </ul>

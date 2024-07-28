@@ -42,6 +42,10 @@
     cursor: pointer;
 }
 
+.footer-content-center li{
+    color: white;
+}
+
 .footer-content-right h2, .footer-content-center h2{
     color: white;
 }
