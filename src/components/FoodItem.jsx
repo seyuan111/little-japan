@@ -6,7 +6,7 @@ import { StoreContext } from '../context/StoreContext';
 import '../seperateCSS/FoodItem.css';
 
 const FoodItem = ({ id, name, price, description, image }) => {
-    const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
+    const { cartItems, addToCart, removeFromCart, decrement } = useContext(StoreContext);
 
     return (
         <div className="food-item">
@@ -15,7 +15,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
                 {
                     !cartItems[id] ? <FaPlus className="add" onClick={() => addToCart(id)} /> :
                     <div className="food-item-counter">
-                        <IoIosRemove className="minus" onClick={() => removeFromCart(id)} />
+                        <IoIosRemove className="minus" onClick={() => decrement(id)} />
                         <p className="count">{cartItems[id]}</p>
                         <IoIosAdd className="plus" onClick={() => addToCart(id)} />
                     </div>

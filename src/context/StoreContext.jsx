@@ -14,6 +14,10 @@ const StoreContextProvider = (props) => {
         }
     };
 
+    const decrement = (itemId) => {
+        setCartItems((prev) => ({...prev,[itemId]:prev[itemId]-1}))
+    }
+
     const removeFromCart = (itemId) => {
         setCartItems((prev) => {
             const updatedCart = { ...prev };
@@ -43,7 +47,8 @@ const StoreContextProvider = (props) => {
         setCartItems,
         addToCart,
         removeFromCart,
-        getTotalCartAmount
+        getTotalCartAmount,
+        decrement
     };
 
     return (
