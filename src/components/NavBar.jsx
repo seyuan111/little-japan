@@ -34,7 +34,6 @@ const NavBar = ({ setShowLogin }) => {
       </ul>
 
       <div className="right">
-        <FaSearch className="search" />
         <div className="search-icon-navbar">
           <Link to="/cart"><FaShoppingCart className="shopping-cart" /></Link>
           <div className={getTotalCartAmount()===0?"":"dot"}></div>
