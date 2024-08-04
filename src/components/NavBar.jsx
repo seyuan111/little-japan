@@ -3,6 +3,7 @@ import '../seperateCSS/NavBar.css';
 import { FaSearch, FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import {StoreContext} from '../context/StoreContext'
+import LittleJapan from '../assets/LittleJapan.png'
 
 const NavBar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
@@ -21,7 +22,7 @@ const NavBar = ({ setShowLogin }) => {
   return (
     <div className="navbar">
       <Link to="/"><img 
-        src="https://c8.alamy.com/comp/2J2TJ03/sushi-logo-in-a-bowl-chopsticks-swoosh-bowl-oriental-japan-cuisine-japanese-sushi-seafood-logo-design-inspiration-2J2TJ03.jpg" 
+        src={LittleJapan} 
         alt="Logo" 
         className="japaneseLogo"
       /></Link>
