@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 import { food_list } from '../assets/resources';
 
 export const StoreContext = createContext(null);
@@ -6,17 +6,29 @@ export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
     const [cartItems, setCartItems] = useState({});
 
-    const addToCart = (itemId) => {
-        if (!cartItems[itemId]) {
-            setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
+    const addToCart = (itemId, initialAdd) => {
+        if (initialAdd) {
+            if (!cartItems[itemId]) {
+                setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
+            }
         } else {
-            setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+            if (cartItems[itemId]) {
+                setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+            }
         }
     };
 
     const decrement = (itemId) => {
-        setCartItems((prev) => ({...prev,[itemId]:prev[itemId]-1}))
-    }
+        setCartItems((prev) => {
+            const updatedCart = { ...prev };
+            if (updatedCart[itemId] > 1) {
+                updatedCart[itemId] -= 1;
+            } else {
+                delete updatedCart[itemId];
+            }
+            return updatedCart;
+        });
+    };
 
     const removeFromCart = (itemId) => {
         setCartItems((prev) => {

@@ -87,6 +87,26 @@
     cursor: pointer;
 }
 
+.food-item-info .cartButton{
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    background-color: rgb(28, 118, 230);
+    padding: 10px 5px;
+    color: white;
+    border-radius: 10px;
+}
+
+.food-item-info .cartButton:hover{
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    background-color: black;
+    padding: 10px 5px;
+    color: white;
+    border-radius: 10px;
+}
+
 @media (max-width: 800px){
     .food-item-img-container .add {
         width: 40px;
